@@ -1,12 +1,15 @@
 <html lang="ja">
 <head>
-<meta charset="utf-8" />
-<title>post index</title>
+    <meta charset="utf-8" />
+    <title>post index</title>
 
 </head>
 <body>
 <main>
-<p>Hello World</p>
+    <p>Hello World</p>
+     <% @posts.each do |post| %>
+        <p> <%= post.user_name %> </p>
+     <% end %>
 </main>
 
 </body>
