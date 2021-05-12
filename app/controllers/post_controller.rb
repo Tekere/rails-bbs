@@ -3,11 +3,12 @@ class PostController < ApplicationController
         @posts = Post.all
     end
     
-    def create
-    end
-    
     def new
-        
+        @post = Post.new
+    end
+    def create
+        Post.create(post_params)
+        redirect_to '/'
     end
     
     def delete
