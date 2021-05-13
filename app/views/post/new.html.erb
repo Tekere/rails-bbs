@@ -4,14 +4,14 @@
     <title>post index</title>
 </head>
 <body>
-<main>
-    <h1>new</h1>
-    <%= form_for(@post, url:'/posts/create') do |f| %>
-        <%= f.text_field :title %>
-        <%= f.text_field :body %>
-        <%= f.text_field :user_name %>
-        <%= f.submit %>
-     <% end %>
-</main>
+    <main>
+        <h1>new</h1>
+        <%= form_for(@post, url:'/posts/create') do |f| %>
+            <%= f.text_field :title %>
+            <%= f.text_field :body %>
+            <%= f.text_field :user_name %>
+            <%= f.submit %>
+         <% end %>
+    </main>
 </body>
 </html>
